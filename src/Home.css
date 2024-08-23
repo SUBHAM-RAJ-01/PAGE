@@ -1,0 +1,79 @@
+/* src/components/Home.css */
+
+.home {
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+h1.animated-text{
+    font-family: 'Space Grotesk';
+    font-size: 40px;
+}
+p.animated-text{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.animated-text {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.animated-text:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.animated-text:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.resume-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid currentColor;
+    background-color: inherit;
+    color: inherit;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode .resume-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .resume-button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 430px) {
+    .home {
+        padding: 80px 15px;
+    }
+
+    .resume-button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

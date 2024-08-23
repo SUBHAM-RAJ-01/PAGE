@@ -1,0 +1,82 @@
+/* src/components/Contact.css */
+
+.contact {
+    padding: 100px 40px;
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #000000; /* Black text color in light mode */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 480px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 30px;
+    cursor: pointer;
+    border: 1px solid currentColor;
+    background-color: inherit;
+    color: inherit;
+    font-size: 16px;
+    border-radius: 2px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+    border-color: #000000;
+    color: black;
+}
+
+button:hover {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+/* Dark mode adjustments */
+body.dark-mode .contact h2 {
+    color: #ffffff; /* White text color for heading in dark mode */
+}
+
+body.dark-mode input, body.dark-mode textarea {
+    background-color: #333333; /* Dark background for inputs in dark mode */
+    color: #ffffff; /* White text color in dark mode */
+    border: 1px solid #666666; /* Darker border in dark mode */
+}
+
+body.dark-mode button:hover {
+    background-color: black; /* White background in dark mode */
+    color: white; /* Black text in dark mode */
+}
+
+@media (max-width: 430px) {
+    .contact {
+        padding: 80px 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

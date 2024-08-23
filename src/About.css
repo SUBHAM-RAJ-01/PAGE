@@ -1,0 +1,84 @@
+/* src/components/About.css */
+
+.about {
+    padding: 100px 40px;
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center;
+    color: #000000; /* Black text color in light mode */
+}
+
+.about h2 {
+    margin-bottom: 40px;
+    color: #000000; /* Black text color for headings in light mode */
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.skill-icon {
+    width: 100px;
+    text-align: left;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #000000; /* Black text color for skill names in light mode */
+}
+
+.skill-bar-container {
+    flex: 1;
+    background-color: #ffffff; /* White background for the bar */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.skill-bar {
+    height: 100%;
+    background-color: #4caf50; /* Green color for the fill */
+    transition: width 0.3s;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .about {
+    color: #ffffff; /* White text color in dark mode */
+}
+
+body.dark-mode .about h2 {
+    color: #ffffff; /* White text color for headings in dark mode */
+}
+
+body.dark-mode .skill-icon {
+    color: #ffffff; /* White text color for skill names in dark mode */
+}
+
+@media (max-width: 430px) {
+    .about {
+        padding: 80px 20px;
+    }
+
+    .skill-icon {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .skill-bar-container {
+        height: 8px;
+    }
+
+    .skill-bar {
+        height: 100%;
+    }
+}

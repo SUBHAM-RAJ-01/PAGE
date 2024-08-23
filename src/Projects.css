@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Dark Mode Styles */
+.app.dark .projects {
+    background-color: #000000; /* Black background for the projects section in dark mode */
+  }
+  
+  .app.dark .projects h2 {
+    color: #ffffff; /* White text for the Projects header in dark mode */
+  }
+  
+  .app.dark .project-box {
+    background-color: #333333; /* Darker background for project boxes in dark mode */
+    border: 1px solid #ffffff; /* White border for project boxes in dark mode */
+  }
+  
+  .app.dark .project-link {
+    background-color: #ffffff; /* White background for the Visit Project button in dark mode */
+    color: #000000; /* Black text for the Visit Project button in dark mode */
+    border: 1px solid #000000; /* Black border for the Visit Project button in dark mode */
+  }
+  
+  .app.dark .view-more {
+    background-color: #ffffff; /* White background for the View More button in dark mode */
+    color: #000000; /* Black text for the View More button in dark mode */
+    border: 1px solid #000000; /* Black border for the View More button in dark mode */
+  }
+  
+  /* Light Mode Styles */
+  .app.light .projects {
+    background-color: rgb(194, 193, 193); /* Light background for the projects section in light mode */
+  }
+  
+  .app.light .projects h2 {
+    color: #000000; /* Black text for the Projects header in light mode */
+  }
+  
+  .app.light .project-box {
+    background-color: #ffffff; /* White background for project boxes in light mode */
+    border: 1px solid #000000; /* Black border for project boxes in light mode */
+  }
+  
+  .app.light .project-link {
+    background-color: #000000; /* Black background for the Visit Project button in light mode */
+    color: #ffffff; /* White text for the Visit Project button in light mode */
+    border: 1px solid #ffffff; /* White border for the Visit Project button in light mode */
+  }
+  
+  .app.light .view-more {
+    background-color: #000000; /* Black background for the View More button in light mode */
+    color: #ffffff; /* White text for the View More button in light mode */
+    border: 1px solid #ffffff; /* White border for the View More button in light mode */
+  }
+  
+  /* General Styles */
+  .projects {
+    padding: 100px 40px;
+    color: inherit; /* Inherit text color from .app */
+    text-align: center;
+  }
+  
+  .projects h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-family: 'Space Grotesk';
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-box {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    background-color: #ffffff; /* Always white background for project boxes */
+    border: 1px solid var(--box-border); /* Border color based on theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+  
+  .project-box:hover {
+    background-color: var(--box-background);
+    border-color: var(--box-border);
+    transform: scale(1.05);
+  }
+  
+  .project-box h3 {
+    margin-bottom: 10px;
+  }
+  
+  .project-box p {
+    margin-bottom: 10px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--link-background);
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid var(--link-border);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .project-link:hover {
+    background-color: var(--link-hover-background);
+    color: var(--link-hover-color);
+  }
+  
+  .view-more {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 0;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--button-border);
+    background-color: var(--button-background);
+    color: var(--button-text);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .view-more:hover {
+    background-color: var(--button-text);
+    color: var(--button-background);
+    border-color: var(--button-text);
+  }
+  
