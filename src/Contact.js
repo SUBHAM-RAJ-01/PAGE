@@ -6,7 +6,7 @@ import './Contact.css'; // Import the CSS file
 const Contact = () => {
   return (
     <div className="contact" id='contact'>
-      <h2>CONNECT ME</h2>
+      <h2>Connect</h2>
       <form>
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />

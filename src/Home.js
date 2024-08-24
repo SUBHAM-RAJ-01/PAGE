@@ -10,7 +10,9 @@ const Home = () => {
                 <h1 className="animated-text">Hi, I am <span>SUBHAM RAJ</span></h1>
                 <p className="animated-text">A passionate web and software developer. I also do electronics.</p>
             </div>
-            <button className="resume-button">Download Resume</button>
+            <a href="/resume.pdf" className="resume-button" download>
+                Download Resume
+            </a>
         </section>
     );
 };

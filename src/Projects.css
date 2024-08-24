@@ -3,76 +3,88 @@
 /* Dark Mode Styles */
 .app.dark .projects {
     background-color: #000000; /* Black background for the projects section in dark mode */
-  }
-  
-  .app.dark .projects h2 {
+}
+
+.app.dark .projects h2 {
     color: #ffffff; /* White text for the Projects header in dark mode */
-  }
-  
-  .app.dark .project-box {
+}
+
+.app.dark .project-box {
     background-color: #333333; /* Darker background for project boxes in dark mode */
     border: 1px solid #ffffff; /* White border for project boxes in dark mode */
-  }
-  
-  .app.dark .project-link {
+}
+
+.app.dark .project-link {
     background-color: #ffffff; /* White background for the Visit Project button in dark mode */
     color: #000000; /* Black text for the Visit Project button in dark mode */
     border: 1px solid #000000; /* Black border for the Visit Project button in dark mode */
-  }
-  
-  .app.dark .view-more {
-    background-color: #ffffff; /* White background for the View More button in dark mode */
-    color: #000000; /* Black text for the View More button in dark mode */
-    border: 1px solid #000000; /* Black border for the View More button in dark mode */
-  }
-  
-  /* Light Mode Styles */
-  .app.light .projects {
+}
+
+.app.dark .view-more {
+    background-color: #000000; /* Black background for the View More button in dark mode */
+    color: #ffffff; /* White text for the View More button in dark mode */
+    border: 1px solid #ffffff; /* White border for the View More button in dark mode */
+}
+
+.app.dark .view-more:hover {
+    background-color: #ffffff; /* White background on hover in dark mode */
+    color: #000000; /* Black text on hover in dark mode */
+    border-color: #000000; /* Black border on hover in dark mode */
+}
+
+/* Light Mode Styles */
+.app.light .projects {
     background-color: rgb(194, 193, 193); /* Light background for the projects section in light mode */
-  }
-  
-  .app.light .projects h2 {
+}
+
+.app.light .projects h2 {
     color: #000000; /* Black text for the Projects header in light mode */
-  }
-  
-  .app.light .project-box {
+}
+
+.app.light .project-box {
     background-color: #ffffff; /* White background for project boxes in light mode */
     border: 1px solid #000000; /* Black border for project boxes in light mode */
-  }
-  
-  .app.light .project-link {
+}
+
+.app.light .project-link {
     background-color: #000000; /* Black background for the Visit Project button in light mode */
     color: #ffffff; /* White text for the Visit Project button in light mode */
     border: 1px solid #ffffff; /* White border for the Visit Project button in light mode */
-  }
-  
-  .app.light .view-more {
-    background-color: #000000; /* Black background for the View More button in light mode */
-    color: #ffffff; /* White text for the View More button in light mode */
-    border: 1px solid #ffffff; /* White border for the View More button in light mode */
-  }
-  
-  /* General Styles */
-  .projects {
+}
+
+.app.light .view-more {
+    background-color: #ffffff; /* White background for the View More button in light mode */
+    color: #000000; /* Black text for the View More button in light mode */
+    border: 1px solid #000000; /* Black border for the View More button in light mode */
+}
+
+.app.light .view-more:hover {
+    background-color: #000000; /* Black background on hover in light mode */
+    color: #ffffff; /* White text on hover in light mode */
+    border-color: #ffffff; /* White border on hover in light mode */
+}
+
+/* General Styles */
+.projects {
     padding: 100px 40px;
     color: inherit; /* Inherit text color from .app */
     text-align: center;
-  }
-  
-  .projects h2 {
+}
+
+.projects h2 {
     margin-bottom: 40px;
     font-size: 32px;
     font-family: 'Space Grotesk';
-  }
-  
-  .projects-container {
+}
+
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .project-box {
+}
+
+.project-box {
     width: 250px;
     height: 250px;
     padding: 20px;
@@ -83,23 +95,17 @@
     position: relative;
     margin-bottom: 20px;
     transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
-  }
-  
-  .project-box:hover {
-    background-color: var(--box-background);
-    border-color: var(--box-border);
-    transform: scale(1.05);
-  }
-  
-  .project-box h3 {
+}
+
+.project-box h3 {
     margin-bottom: 10px;
-  }
-  
-  .project-box p {
+}
+
+.project-box p {
     margin-bottom: 10px;
-  }
-  
-  .project-link {
+}
+
+.project-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--link-background);
@@ -108,28 +114,60 @@
     font-size: 14px;
     border: 1px solid var(--link-border);
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .project-link:hover {
+}
+
+.project-link:hover {
     background-color: var(--link-hover-background);
     color: var(--link-hover-color);
-  }
-  
-  .view-more {
+}
+
+/* View More/Less Button */
+.view-more {
     padding: 10px 20px;
     margin-top: 30px;
     border-radius: 0;
     font-size: 16px;
     cursor: pointer;
-    border: 1px solid var(--button-border);
-    background-color: var(--button-background);
-    color: var(--button-text);
+    border: 1px solid #000000; /* Black border in light mode */
+    background-color: #ffffff; /* White background in light mode */
+    color: #000000; /* Black text in light mode */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  }
-  
-  .view-more:hover {
-    background-color: var(--button-text);
-    color: var(--button-background);
-    border-color: var(--button-text);
-  }
-  
+}
+
+.app.light .view-more:hover {
+    background-color: #000000; /* Black background on hover in light mode */
+    color: #ffffff; /* White text on hover in light mode */
+    border-color: #ffffff; /* White border on hover in light mode */
+}
+
+.app.dark .view-more {
+    background-color: #000000; /* Black background in dark mode */
+    color: #ffffff; /* White text in dark mode */
+    border: 1px solid #ffffff; /* White border in dark mode */
+}
+
+.app.dark .view-more:hover {
+    background-color: #ffffff; /* White background on hover in dark mode */
+    color: #000000; /* Black text on hover in dark mode */
+    border-color: #000000; /* Black border on hover in dark mode */
+}
+
+/* Animation */
+@keyframes expand {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+.project-box.expanded {
+    animation: expand 0.5s ease-in-out;
+}
+
+.project-box.collapsed {
+    animation: expand 0.5s ease-in-out reverse;
+}
