@@ -56,7 +56,7 @@ img.logo{
 
 .navbar .theme-toggle {
     cursor: pointer;
-    background-color: #333; /* Default background color */
+    background-color: #858165; /* Default background color */
     color: #fff; /* Default text color */
     border-radius: 50%;
     padding: 10px; /* Adjust padding as needed */
@@ -64,7 +64,7 @@ img.logo{
 }
 
 .navbar .theme-toggle:hover {
-    background-color: #e7c908; /* Background color on hover */
+    background-color: #e8eae0; /* Background color on hover */
     transform: scale(1.2); /* Zoom in effect */
 }
 /* Hamburger menu */
@@ -109,7 +109,7 @@ img.logo{
         gap: 20px;
         background-color: #333;
         position: absolute;
-        top: 70px;
+        top: 90px;
         right: 0;
         width: 100%;
         padding: 20px;
@@ -121,5 +121,6 @@ img.logo{
         text-decoration: none;
         padding: 10px;
         display: block;
+        padding-left: 70px;
     }
 }

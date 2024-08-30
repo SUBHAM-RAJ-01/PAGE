@@ -13,7 +13,7 @@ const Footer = () => {
                     <img src="\images\logo.png" alt="Logo" />
                 </div>
                 <div className="footer-icons">
-                    <a href="https://www.linkedin.com/subham-raj-5a1a402ab" target="_blank" rel="noopener noreferrer">
+                    <a href="www.linkedin.com/in/subham-raj-5a1a402ab" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </a>
                     <a href="https://github.com/SUBHAM-RAJ-01" target="_blank" rel="noopener noreferrer">

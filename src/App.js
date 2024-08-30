@@ -6,7 +6,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
-import './App.css';  // Global styles
+import './App.css'; 
 
 const App = () => {
     const [darkTheme, setDarkTheme] = useState(false);
